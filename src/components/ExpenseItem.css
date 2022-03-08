@@ -1,0 +1,114 @@
+.expense-item {
+  user-select: none;
+  display: flex;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+  /* margin: 2rem 4rem 2rem 4rem; */
+  margin: 2rem 20% 2rem 20%;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.144);
+
+  border: 1px solid rgba(255, 252, 252, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.expense-item:hover {
+  transform: scale(1.1);
+}
+
+.expense-item__description {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.expense-item__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.expense-item__button_edit {
+  cursor: pointer;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.expense-item__button_delete {
+  cursor: pointer;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+.expense-item__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.expense-item__button_edit:hover {
+  color: rgb(255, 192, 55);
+  transform: scale(1.2);
+}
+
+.expense-item__button_delete:hover {
+  color: rgb(255, 75, 75);
+  transform: scale(1.2);
+}
+
+.expense-item h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.expense-item__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.expense-item__date {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.expense-item__price {
+  font-size: 1.25rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  color: white;
+  /* background-color: #252525; */
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.expense-item__price:hover {
+  font-size: 1.25rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  background-color: rgb(22, 155, 10);
+  color: rgb(255, 255, 255);
+  /* background-color: #252525; */
+  border: 1px solid rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .expense-item {
+    /* margin: 2rem 4rem 2rem 4rem; */
+    margin: 2rem 10% 2rem 10%;
+  }
+  .expense-item:hover {
+    transform: scale(1.1);
+  }
+}
