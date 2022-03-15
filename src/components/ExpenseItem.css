@@ -55,12 +55,12 @@
 
 .expense-item__button_edit:hover {
   color: rgb(255, 192, 55);
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 
 .expense-item__button_delete:hover {
   color: rgb(255, 75, 75);
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 
 .expense-item h2 {
@@ -68,19 +68,33 @@
   color: white;
 }
 
-.expense-item__title {
+.expense-item__column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  transition: all 0.1s ease-in-out;
+}
+
+.expense-item__title {
+  transition: all 0.1s ease-in-out;
+}
+.expense-item__title:hover {
+  transform: scale(1.2);
 }
 
 .expense-item__date {
   color: white;
   font-size: 1.1rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.expense-item__date:hover {
+  transform: scale(1.2);
 }
 
 .expense-item__price {
+  background-color: rgba(36, 158, 25, 0.712);
   font-size: 1.25rem;
   padding: 0.5rem 1.5rem;
   font-weight: bold;
@@ -89,6 +103,7 @@
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 12px;
+  transition: all 0.1s ease-in-out;
 }
 
 .expense-item__price:hover {
@@ -101,6 +116,7 @@
   border: 1px solid rgb(255, 255, 255);
   padding: 0.5rem;
   border-radius: 12px;
+  transform: scale(1.2);
 }
 
 @media (max-width: 900px) {

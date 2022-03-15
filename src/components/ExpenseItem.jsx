@@ -7,8 +7,8 @@ const ExpenseItem = (props) => {
   return (
     <div className="expense-item">
       <div className="expense-item__description">
-        <div className="expense-item__title">
-          <h2>{expenseTitle}</h2>
+        <div className="expense-item__column">
+          <h2  className="expense-item__title">{expenseTitle}</h2>
           <p className="expense-item__date">{expenseDate}</p>
         </div>
         <div className="expense-item__right">
